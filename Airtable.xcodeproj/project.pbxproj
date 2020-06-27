@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4CD77DFB236F501200E43C89 /* TimelineVC+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD77DFA236F501200E43C89 /* TimelineVC+Ext.swift */; };
+		4CDA62D5236E57AD001A5D34 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDA62D4236E57AD001A5D34 /* ItemCell.swift */; };
+		4CDA62D7236E5D92001A5D34 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDA62D6236E5D92001A5D34 /* Item.swift */; };
+		4CDA62D9236E5E53001A5D34 /* TimelineViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDA62D8236E5E53001A5D34 /* TimelineViewmodel.swift */; };
+		4CDA62DB236E5EAD001A5D34 /* timeline-data.json in Resources */ = {isa = PBXBuildFile; fileRef = 4CDA62DA236E5EAD001A5D34 /* timeline-data.json */; };
+		4CDA62DC236E5EAD001A5D34 /* timeline-data.json in Resources */ = {isa = PBXBuildFile; fileRef = 4CDA62DA236E5EAD001A5D34 /* timeline-data.json */; };
+		4CE23927236CE3500079AF25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE23926236CE3500079AF25 /* AppDelegate.swift */; };
+		4CE2392E236CE3540079AF25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CE2392D236CE3540079AF25 /* Assets.xcassets */; };
+		4CE23931236CE3540079AF25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CE2392F236CE3540079AF25 /* LaunchScreen.storyboard */; };
+		4CE2393C236CE3540079AF25 /* AirtableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE2393B236CE3540079AF25 /* AirtableTests.swift */; };
+		4CE23947236CE9890079AF25 /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE23946236CE9890079AF25 /* Marker.swift */; };
+		4CE23949236CEEF80079AF25 /* Connector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE23948236CEEF80079AF25 /* Connector.swift */; };
+		4CE2394B236CEF750079AF25 /* Divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE2394A236CEF750079AF25 /* Divider.swift */; };
+		4CE2394E236CF0BC0079AF25 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE2394D236CF0BC0079AF25 /* TimelineViewController.swift */; };
+		4CF0925C236FEC2300055722 /* TimelineView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF0925B236FEC2200055722 /* TimelineView+Constraints.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4CE23938236CE3540079AF25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CE2391B236CE3500079AF25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CE23922236CE3500079AF25;
+			remoteInfo = Airtable;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4CD77DFA236F501200E43C89 /* TimelineVC+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimelineVC+Ext.swift"; sourceTree = "<group>"; };
+		4CDA62D4236E57AD001A5D34 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		4CDA62D6236E5D92001A5D34 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		4CDA62D8236E5E53001A5D34 /* TimelineViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewmodel.swift; sourceTree = "<group>"; };
+		4CDA62DA236E5EAD001A5D34 /* timeline-data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "timeline-data.json"; sourceTree = "<group>"; };
+		4CE23923236CE3500079AF25 /* Airtable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Airtable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CE23926236CE3500079AF25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4CE2392D236CE3540079AF25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4CE23930236CE3540079AF25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4CE23932236CE3540079AF25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CE23937236CE3540079AF25 /* AirtableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirtableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CE2393B236CE3540079AF25 /* AirtableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirtableTests.swift; sourceTree = "<group>"; };
+		4CE2393D236CE3540079AF25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CE23946236CE9890079AF25 /* Marker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marker.swift; sourceTree = "<group>"; };
+		4CE23948236CEEF80079AF25 /* Connector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connector.swift; sourceTree = "<group>"; };
+		4CE2394A236CEF750079AF25 /* Divider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Divider.swift; sourceTree = "<group>"; };
+		4CE2394D236CF0BC0079AF25 /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		4CF0925B236FEC2200055722 /* TimelineView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimelineView+Constraints.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CE23920236CE3500079AF25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CE23934236CE3540079AF25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CDA62DD236E5EC7001A5D34 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4CDA62DA236E5EAD001A5D34 /* timeline-data.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		4CDA62DE236E5ED7001A5D34 /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				4CE2394D236CF0BC0079AF25 /* TimelineViewController.swift */,
+				4CF0925B236FEC2200055722 /* TimelineView+Constraints.swift */,
+				4CD77DFA236F501200E43C89 /* TimelineVC+Ext.swift */,
+				4CDA62D8236E5E53001A5D34 /* TimelineViewmodel.swift */,
+			);
+			path = Timeline;
+			sourceTree = "<group>";
+		};
+		4CDA62DF236E5EE0001A5D34 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4CDA62D6236E5D92001A5D34 /* Item.swift */,
+				4CDA62D4236E57AD001A5D34 /* ItemCell.swift */,
+				4CE2394C236CF0AC0079AF25 /* Custom Views */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4CE2391A236CE3500079AF25 = {
+			isa = PBXGroup;
+			children = (
+				4CE23925236CE3500079AF25 /* Airtable */,
+				4CE2393A236CE3540079AF25 /* AirtableTests */,
+				4CE23924236CE3500079AF25 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4CE23924236CE3500079AF25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CE23923236CE3500079AF25 /* Airtable.app */,
+				4CE23937236CE3540079AF25 /* AirtableTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CE23925236CE3500079AF25 /* Airtable */ = {
+			isa = PBXGroup;
+			children = (
+				4CE23926236CE3500079AF25 /* AppDelegate.swift */,
+				4CDA62DF236E5EE0001A5D34 /* Models */,
+				4CDA62DE236E5ED7001A5D34 /* Timeline */,
+				4CDA62DD236E5EC7001A5D34 /* Data */,
+				4CE2392D236CE3540079AF25 /* Assets.xcassets */,
+				4CE2392F236CE3540079AF25 /* LaunchScreen.storyboard */,
+				4CE23932236CE3540079AF25 /* Info.plist */,
+			);
+			path = Airtable;
+			sourceTree = "<group>";
+		};
+		4CE2393A236CE3540079AF25 /* AirtableTests */ = {
+			isa = PBXGroup;
+			children = (
+				4CE2393B236CE3540079AF25 /* AirtableTests.swift */,
+				4CE2393D236CE3540079AF25 /* Info.plist */,
+			);
+			path = AirtableTests;
+			sourceTree = "<group>";
+		};
+		4CE2394C236CF0AC0079AF25 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				4CE23946236CE9890079AF25 /* Marker.swift */,
+				4CE2394A236CEF750079AF25 /* Divider.swift */,
+				4CE23948236CEEF80079AF25 /* Connector.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4CE23922236CE3500079AF25 /* Airtable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CE23940236CE3550079AF25 /* Build configuration list for PBXNativeTarget "Airtable" */;
+			buildPhases = (
+				4CE2391F236CE3500079AF25 /* Sources */,
+				4CE23920236CE3500079AF25 /* Frameworks */,
+				4CE23921236CE3500079AF25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Airtable;
+			productName = Airtable;
+			productReference = 4CE23923236CE3500079AF25 /* Airtable.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4CE23936236CE3540079AF25 /* AirtableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CE23943236CE3550079AF25 /* Build configuration list for PBXNativeTarget "AirtableTests" */;
+			buildPhases = (
+				4CE23933236CE3540079AF25 /* Sources */,
+				4CE23934236CE3540079AF25 /* Frameworks */,
+				4CE23935236CE3540079AF25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CE23939236CE3540079AF25 /* PBXTargetDependency */,
+			);
+			name = AirtableTests;
+			productName = AirtableTests;
+			productReference = 4CE23937236CE3540079AF25 /* AirtableTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4CE2391B236CE3500079AF25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Lotanna Odunze";
+				TargetAttributes = {
+					4CE23922236CE3500079AF25 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					4CE23936236CE3540079AF25 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 4CE23922236CE3500079AF25;
+					};
+				};
+			};
+			buildConfigurationList = 4CE2391E236CE3500079AF25 /* Build configuration list for PBXProject "Airtable" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4CE2391A236CE3500079AF25;
+			productRefGroup = 4CE23924236CE3500079AF25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4CE23922236CE3500079AF25 /* Airtable */,
+				4CE23936236CE3540079AF25 /* AirtableTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CE23921236CE3500079AF25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CE23931236CE3540079AF25 /* LaunchScreen.storyboard in Resources */,
+				4CDA62DB236E5EAD001A5D34 /* timeline-data.json in Resources */,
+				4CE2392E236CE3540079AF25 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CE23935236CE3540079AF25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CDA62DC236E5EAD001A5D34 /* timeline-data.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CE2391F236CE3500079AF25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CE23949236CEEF80079AF25 /* Connector.swift in Sources */,
+				4CE23927236CE3500079AF25 /* AppDelegate.swift in Sources */,
+				4CDA62D5236E57AD001A5D34 /* ItemCell.swift in Sources */,
+				4CE23947236CE9890079AF25 /* Marker.swift in Sources */,
+				4CDA62D7236E5D92001A5D34 /* Item.swift in Sources */,
+				4CD77DFB236F501200E43C89 /* TimelineVC+Ext.swift in Sources */,
+				4CDA62D9236E5E53001A5D34 /* TimelineViewmodel.swift in Sources */,
+				4CE2394B236CEF750079AF25 /* Divider.swift in Sources */,
+				4CF0925C236FEC2300055722 /* TimelineView+Constraints.swift in Sources */,
+				4CE2394E236CF0BC0079AF25 /* TimelineViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CE23933236CE3540079AF25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CE2393C236CE3540079AF25 /* AirtableTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4CE23939236CE3540079AF25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CE23922236CE3500079AF25 /* Airtable */;
+			targetProxy = 4CE23938236CE3540079AF25 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4CE2392F236CE3540079AF25 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CE23930236CE3540079AF25 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4CE2393E236CE3550079AF25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4CE2393F236CE3550079AF25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4CE23941236CE3550079AF25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94Q7Y757NG;
+				INFOPLIST_FILE = Airtable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.lotanna.Airtable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4CE23942236CE3550079AF25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94Q7Y757NG;
+				INFOPLIST_FILE = Airtable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.lotanna.Airtable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4CE23944236CE3550079AF25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94Q7Y757NG;
+				INFOPLIST_FILE = AirtableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.lotanna.AirtableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Airtable.app/Airtable";
+			};
+			name = Debug;
+		};
+		4CE23945236CE3550079AF25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94Q7Y757NG;
+				INFOPLIST_FILE = AirtableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.lotanna.AirtableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Airtable.app/Airtable";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CE2391E236CE3500079AF25 /* Build configuration list for PBXProject "Airtable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CE2393E236CE3550079AF25 /* Debug */,
+				4CE2393F236CE3550079AF25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CE23940236CE3550079AF25 /* Build configuration list for PBXNativeTarget "Airtable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CE23941236CE3550079AF25 /* Debug */,
+				4CE23942236CE3550079AF25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CE23943236CE3550079AF25 /* Build configuration list for PBXNativeTarget "AirtableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CE23944236CE3550079AF25 /* Debug */,
+				4CE23945236CE3550079AF25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4CE2391B236CE3500079AF25 /* Project object */;
+}
